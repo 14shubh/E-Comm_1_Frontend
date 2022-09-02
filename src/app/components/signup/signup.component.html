@@ -1,0 +1,38 @@
+<div class="container">
+
+<div class="form-box mt-5">
+  <div class="form-group">
+    <label for="name">Name :</label>
+    <input type="text" name="name" id="name" class="form-control" aria-describedby="helpId" [(ngModel)]="name">
+    <!-- <small id="helpId" class="text-muted">Help text</small> -->
+  </div>
+  <div class="form-group">
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email" class="form-control" aria-describedby="helpId" [(ngModel)]="email">
+    <!-- <small id="helpId" class="text-muted">Help text</small> -->
+  </div>
+  <div class="form-group">
+    <label for="mobile">Mobile :</label>
+    <input type="phone" name="mobile" id="mobile" class="form-control" aria-describedby="helpId" [(ngModel)]="mobile">
+    <!-- <small id="helpId" class="text-muted">Help text</small> -->
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender :</label>
+    <div class="select_gender">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male" [(ngModel)]="gender" class="mx-2">
+      <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female" [(ngModel)]="gender" class="mx-2">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password" class="form-control" aria-describedby="helpId" [(ngModel)]="password">
+    <!-- <small id="helpId" class="text-muted">Help text</small> -->
+  </div>
+  <div class="form-group">
+    <button type="submit" class="form-control btn btn-light" (click)="SignUp()">Sign Up</button>
+  </div>
+</div>
+
+</div>
